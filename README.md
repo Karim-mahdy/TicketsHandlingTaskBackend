@@ -1,35 +1,30 @@
 Ticket Management Task
 Overview
-This .NET Core application is a Ticket Management Task with features for creating, listing, and managing tickets. It uses CQRS, Mediator pattern, Clean Architecture, and other modern development practices.
+This .NET Core application is a Ticket Management Task designed to create, list, and manage tickets. It utilizes modern development practices including CQRS, the Mediator pattern, and Clean Architecture.
 
 Features
-Create a Ticket
-
-Properties: Id, Creation Date, Phone Number, Governorate, City, District.
-Dropdown Lists for Governorate, City, and District (static values).
-List Tickets
-
-Display tickets with pagination (5 records per page).
-Handle Tickets
-
-Handle Button changes ticket status to "Handled".
-Automatic Handling
-
-Tickets created within the last 60 minutes are automatically handled.
-Color Coding
-
-Yellow: Created 15 minutes ago.
-Green: Created 30 minutes ago.
-Blue: Created 45 minutes ago.
-Red: Created 60 minutes ago.
+1. Create a Ticket
+Properties: Id, Creation Date, Phone Number, Governorate, City, District
+Dropdown Lists for Governorate, City, and District with static values (no database required).
+2. List Tickets
+Pagination: Display tickets with 5 records per page.
+3. Handle Tickets
+Handle Button: Changes ticket status to "Handled".
+4. Automatic Handling
+Tickets created within the last 60 minutes are automatically marked as handled.
+5. Color Coding
+Yellow: Ticket created 15 minutes ago.
+Green: Ticket created 30 minutes ago.
+Blue: Ticket created 45 minutes ago.
+Red: Ticket created 60 minutes ago.
 Technologies Used
 .NET Core: Framework for building the app.
 CQRS & Mediator: Command and Query Responsibility Segregation.
-Clean & Vertical Slice Architecture: Project structure.
+Clean & Vertical Slice Architecture: Project structure for better organization and maintainability.
 AutoMapper: Mapping between DTOs and entities.
-FluentValidation: Data validation.
-Serilog: Logging.
-Hangfire: Background job scheduling.
-SignalR: Real-time updates.
-Design Patterns: Strategy, Factory, Unit of Work.
-SOLID Principles: Code quality and maintainability.
+FluentValidation: Data validation for incoming requests.
+Serilog: Logging framework for capturing errors and exceptions.
+Hangfire: Background job scheduling for automatic ticket handling and status color updates.
+SignalR: Real-time updates for status color changes.
+Design Patterns: Strategy, Factory, and Unit of Work for better design and implementation.
+SOLID Principles: Ensuring high-quality, maintainable, and scalable code.
