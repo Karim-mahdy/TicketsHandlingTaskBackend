@@ -1,0 +1,153 @@
+{
+  "LookupsData": {
+    "Governorates": [
+      {
+        "Id": 1,
+        "Name": "Cairo"
+      },
+      {
+        "Id": 2,
+        "Name": "Alexandria"
+      },
+      {
+        "Id": 3,
+        "Name": "Giza"
+      },
+      {
+        "Id": 4,
+        "Name": "Luxor"
+      },
+      {
+        "Id": 5,
+        "Name": "Aswan"
+      },
+      {
+        "Id": 6,
+        "Name": "Suez"
+      },
+      {
+        "Id": 7,
+        "Name": "Port Said"
+      }
+    ],
+    "Cities": [
+      {
+        "Id": 1,
+        "Name": "Cairo",
+        "GovernorateId": 1
+      },
+      {
+        "Id": 2,
+        "Name": "Alexandria",
+        "GovernorateId": 2
+      },
+      {
+        "Id": 3,
+        "Name": "Giza",
+        "GovernorateId": 3
+      },
+      {
+        "Id": 4,
+        "Name": "Luxor",
+        "GovernorateId": 4
+      },
+      {
+        "Id": 5,
+        "Name": "Aswan",
+        "GovernorateId": 5
+      },
+      {
+        "Id": 6,
+        "Name": "Suez",
+        "GovernorateId": 6
+      },
+      {
+        "Id": 7,
+        "Name": "Port Said",
+        "GovernorateId": 7
+      },
+      {
+        "Id": 8,
+        "Name": "Shubra",
+        "GovernorateId": 1
+      },
+      {
+        "Id": 9,
+        "Name": "Helwan",
+        "GovernorateId": 1
+      },
+      {
+        "Id": 10,
+        "Name": "Mansheya",
+        "GovernorateId": 2
+      }
+    ],
+    "Districts": [
+      {
+        "Id": 1,
+        "Name": "Zamalek",
+        "CityId": 1
+      },
+      {
+        "Id": 2,
+        "Name": "Maadi",
+        "CityId": 1
+      },
+      {
+        "Id": 3,
+        "Name": "Heliopolis",
+        "CityId": 1
+      },
+      {
+        "Id": 4,
+        "Name": "Dokki",
+        "CityId": 3
+      },
+      {
+        "Id": 5,
+        "Name": "Nasr City",
+        "CityId": 1
+      },
+      {
+        "Id": 6,
+        "Name": "Sidi Gaber",
+        "CityId": 2
+      },
+      {
+        "Id": 7,
+        "Name": "Montaza",
+        "CityId": 2
+      },
+      {
+        "Id": 8,
+        "Name": "Bulaq",
+        "CityId": 1
+      },
+      {
+        "Id": 9,
+        "Name": "Garden City",
+        "CityId": 1
+      },
+      {
+        "Id": 10,
+        "Name": "Manial",
+        "CityId": 1
+      },
+      {
+        "Id": 11,
+        "Name": "Haram",
+        "CityId": 3
+      },
+      {
+        "Id": 12,
+        "Name": "Imbaba",
+        "CityId": 3
+      },
+      {
+        "Id": 13,
+        "Name": "Ain Shams",
+        "CityId": 1
+      }
+    ]
+  }
+}
