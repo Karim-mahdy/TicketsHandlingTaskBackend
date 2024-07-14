@@ -52,7 +52,7 @@ namespace TicketsHandling.Persistence.BackgroundJobs
                     await _hubContext.Clients.All.SendAsync("UpdateTicketStatus", ticket.Id, ticket.StatusColor);
                     if (strategy is RedStatusStrategy)
                     {
-                        await _hubContext.Clients.All.SendAsync("HandleTicket", ticket);
+                        await _hubContext.Clients.All.SendAsync("HandleTicket", ticket.Id);
 
                     }
                 }

@@ -47,7 +47,7 @@ namespace TicketsHandling.Application.Features.Tickets.Command.HandleTicket
             _unitOfWork.TicketRepository.Update(ticket);
             await _unitOfWork.CompleteAsync();
 
-            await _hubContext.Clients.All.SendAsync("HandleTicket", ticket);
+            await _hubContext.Clients.All.SendAsync("HandleTicket", ticket.Id);
 
             return Success("Ticket handled successfully");
         }
