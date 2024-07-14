@@ -1,0 +1,44 @@
+version: '3.4'
+
+services:
+  ticketshandling:
+    image: ${DOCKER_REGISTRY-}ticketshandling
+    build:
+      context: .
+      dockerfile: TicketsHandlingTask/Dockerfile
+    ports:
+      - "8080:80"
+      - "8081:443"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ConnectionStrings__DefaultConnection=Server=sqlserver;Database=TicketsDB;User Id=sa;Password=NewStrongP@ssw0rd;TrustServerCertificate=True
+    depends_on:
+      sqlserver:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "curl", "--silent", "--fail", "http://localhost/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+    restart: on-failure
+
+  sqlserver:
+    image: "mcr.microsoft.com/mssql/server:2022-latest"
+    container_name: sql_server
+    hostname: sqlserver
+    ports:
+      - "1433:1433"
+    environment:
+      SA_PASSWORD: "NewStrongP@ssw0rd"
+      ACCEPT_EULA: "Y"
+    volumes:
+      - sql_data:/var/opt/mssql
+    healthcheck:
+      test: ["CMD-SHELL", "/opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P NewStrongP@ssw0rd -Q 'SELECT 1;'"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+    restart: on-failure
+
+volumes:
+  sql_data:

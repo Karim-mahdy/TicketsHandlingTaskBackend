@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35013.160
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicketsHandling", "TicketsHandlingTask\TicketsHandling.csproj", "{D9B37457-C7C7-495D-9138-D0CD83614C50}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TicketsHandling", "TicketsHandlingTask\TicketsHandling.csproj", "{D9B37457-C7C7-495D-9138-D0CD83614C50}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicketsHandling.Persistence", "TaskHandling.Infrastructure\TicketsHandling.Persistence.csproj", "{088EAFD5-10DF-426B-8E7E-7A2C8E0F0CF2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TicketsHandling.Persistence", "TaskHandling.Infrastructure\TicketsHandling.Persistence.csproj", "{088EAFD5-10DF-426B-8E7E-7A2C8E0F0CF2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicketsHandling.Domain", "TaskHandlingTask.Data\TicketsHandling.Domain.csproj", "{D45789C2-7CE6-4C12-9FDD-3A52B3EAE8C9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TicketsHandling.Domain", "TaskHandlingTask.Data\TicketsHandling.Domain.csproj", "{D45789C2-7CE6-4C12-9FDD-3A52B3EAE8C9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicketsHandling.Application", "TaskHandlingTask.Application\TicketsHandling.Application.csproj", "{9E8C7F99-E7AB-455A-BC1C-7CAD58DC070B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TicketsHandling.Application", "TaskHandlingTask.Application\TicketsHandling.Application.csproj", "{9E8C7F99-E7AB-455A-BC1C-7CAD58DC070B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Src", "Src", "{DD70D2A1-5560-42DB-BF5B-DE4BBC001EE2}"
 EndProject
@@ -21,7 +21,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentatio
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{78713310-D839-484C-9508-90C5D9E41EA5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicketsHandling.Service", "TicketsHandling.Service\TicketsHandling.Service.csproj", "{9B2115EE-E155-4D64-8166-80AC7DB65E26}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TicketsHandling.Service", "TicketsHandling.Service\TicketsHandling.Service.csproj", "{9B2115EE-E155-4D64-8166-80AC7DB65E26}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{30400460-0AE1-4AF9-9ADB-AD5535345AB1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -49,6 +51,10 @@ Global
 		{9B2115EE-E155-4D64-8166-80AC7DB65E26}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9B2115EE-E155-4D64-8166-80AC7DB65E26}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9B2115EE-E155-4D64-8166-80AC7DB65E26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30400460-0AE1-4AF9-9ADB-AD5535345AB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30400460-0AE1-4AF9-9ADB-AD5535345AB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30400460-0AE1-4AF9-9ADB-AD5535345AB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30400460-0AE1-4AF9-9ADB-AD5535345AB1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
